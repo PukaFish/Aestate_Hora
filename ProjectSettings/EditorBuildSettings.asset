@@ -8,21 +8,24 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Game_Scenes/Templates/Festival.unity
     guid: 7fa61925edb24434094ee7bf13287bec
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial_Bus.unity
     guid: c550e634a971195449d04f42b88a134a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cutscenes/Templates/House.unity
     guid: 6636d447839d23343b21c1965015e049
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cutscenes/Templates/Kitchen.unity
     guid: c52bcad0836a510488a3e690890ace31
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game_Scenes/Templates/Game.unity
     guid: 39a373969bcde65419874d08975187ee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cutscenes/Templates/Room.unity
     guid: 23652483c5d7fdb418a8489e5d55ec1f
+  - enabled: 1
+    path: Assets/Scenes/Cutscenes/Templates/House 1.unity
+    guid: 132624a6e8f6bb542b8be1e49f3cca01
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: 31f7a538d6cfef4488cfe52abfdc460f
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Friendly_Wave
+      takeName: Take 001
+      internalID: 1827226128182048838
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Poppy_Wave_Excited(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Poppy_Skin
+      parentName: Poppy_Wave_Excited(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 5, y: 5, z: 5}
+    - name: IK_Whole
+      parentName: Poppy_Wave_Excited(Clone)
+      position: {x: -0, y: -0.083375655, z: 0.036685776}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_IK_HANDle
+      parentName: IK_Whole
+      position: {x: -0.04545674, y: 0.05367222, z: 0.0016450866}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ikHandle1
+      parentName: R_IK_HANDle
+      position: {x: 0.0014834022, y: 0, z: 0.000019299983}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_IK_HANDle
+      parentName: IK_Whole
+      position: {x: 0.06677137, y: 0.13773796, z: 0.026613941}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ikHandle2
+      parentName: L_IK_HANDle
+      position: {x: -0.0004903126, y: 0, z: 0.00042359828}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_IK_LEGle
+      parentName: IK_Whole
+      position: {x: 0.012269716, y: 0, z: 0.0077665225}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ikHandle3
+      parentName: L_IK_LEGle
+      position: {x: -0, y: 0.0055361697, z: -0.007626834}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_IK_LEGle
+      parentName: IK_Whole
+      position: {x: -0.012269699, y: 0, z: 0.0059892745}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ikHandle4
+      parentName: R_IK_LEGle
+      position: {x: -0, y: 0.005536156, z: -0.005849552}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IK_HAIRdle
+      parentName: IK_Whole
+      position: {x: -0.0062514995, y: 0.0526245, z: -0.05843413}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ikHandle5
+      parentName: IK_HAIRdle
+      position: {x: 0.0062514995, y: 0.017492559, z: 0.0026641928}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: IK_BODY
+      parentName: IK_Whole
+      position: {x: -0, y: 0.0526245, z: -0.007608927}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle2
+      parentName: IK_BODY
+      position: {x: -0.0004965, y: 0.030751152, z: 0.0076852487}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_Joint
+      parentName: Poppy_Wave_Excited(Clone)
+      position: {x: -0, y: 0.065035574, z: 0.03777501}
+      rotation: {x: -0.49669993, y: -0.50327843, z: 0.49669993, w: 0.50327843}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck_Down_Joint
+      parentName: Body_Joint
+      position: {x: -0.051448457, y: -8.881784e-18, z: -2.2847705e-17}
+      rotation: {x: -0, y: -0, z: -0.98210734, w: 0.1883219}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Torso_Down_Joint
+      parentName: Neck_Down_Joint
+      position: {x: -0.023475448, y: 6.589538e-17, z: -1.04443455e-17}
+      rotation: {x: 0, y: 0, z: 0.0023732146, w: 0.9999972}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bottom_Down_Joint
+      parentName: Torso_Down_Joint
+      position: {x: -0.018732859, y: -2.9309886e-16, z: -8.329934e-18}
+      rotation: {x: 0.4822904, y: 0.5195527, z: 0.50521183, w: -0.4921605}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Leg_Joint
+      parentName: Bottom_Down_Joint
+      position: {x: -0.012158061, y: -2.0288662e-18, z: 1.1622647e-18}
+      rotation: {x: -0.44569764, y: -0.5228453, z: 0.49857, w: 0.5285966}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Knee_Joint
+      parentName: L_Leg_Joint
+      position: {x: -0.023025662, y: -2.7755575e-19, z: -5.9847957e-18}
+      rotation: {x: 0.99599314, y: 0.08572952, z: 0.00058162055, w: 0.025453074}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Foot_Joint
+      parentName: L_Knee_Joint
+      position: {x: -0.027012642, y: -7.216449e-18, z: -3.2147109e-18}
+      rotation: {x: 0.48400047, y: 0.51550317, z: -0.48400047, w: 0.51550317}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Leg_Joint
+      parentName: Bottom_Down_Joint
+      position: {x: 0.012096108, y: 0.0012200973, z: -0.00012330177}
+      rotation: {x: -0.46910778, y: -0.5503088, z: 0.47393438, w: 0.50247824}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Knee_Joint
+      parentName: R_Leg_Joint
+      position: {x: -0.023025727, y: 8.326672e-18, z: 4.1980305e-18}
+      rotation: {x: 0.9959934, y: 0.08573053, z: -0.0005813431, w: -0.025439603}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Foot_Joint
+      parentName: R_Knee_Joint
+      position: {x: -0.027012615, y: -1.30451205e-17, z: -9.985092e-18}
+      rotation: {x: 0.5155032, y: -0.48400044, z: -0.5155032, w: -0.48400044}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Arm_Joint
+      parentName: Neck_Down_Joint
+      position: {x: 0.000919434, y: 0.0003626614, z: -0.021963378}
+      rotation: {x: -0.20176482, y: 0.6777101, z: 0.20176479, w: 0.6777101}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Elbow_Joint
+      parentName: L_Arm_Joint
+      position: {x: -0.026183981, y: -6.5496653e-18, z: 4.9960034e-18}
+      rotation: {x: -0.0007518882, y: -0.0000026200494, z: 0.000001686804, w: 0.99999976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Hand_Joint
+      parentName: L_Elbow_Joint
+      position: {x: -0.024034612, y: -1.4580674e-18, z: -5.5511148e-18}
+      rotation: {x: 5.7608914e-17, y: 0.9983444, z: -5.7608914e-17, w: -0.05751955}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Arm_Joint
+      parentName: Neck_Down_Joint
+      position: {x: 0.00091945566, y: 0.00036267913, z: 0.0219634}
+      rotation: {x: 0.4543493, y: -0.541818, z: 0.45434925, w: 0.541818}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Elbow_Joint
+      parentName: R_Arm_Joint
+      position: {x: -0.026183993, y: -9.454243e-19, z: -6.1062266e-18}
+      rotation: {x: 0.0005337894, y: 0.034606457, z: -0.0010928363, w: 0.9994003}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Hand_Joint
+      parentName: R_Elbow_Joint
+      position: {x: -0.024034534, y: 5.739857e-20, z: 1.3877788e-17}
+      rotation: {x: 0.9983444, y: 3.451535e-18, z: 0.05751885, w: 6.072919e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hair_Joint
+      parentName: Body_Joint
+      position: {x: 0.014860712, y: 0.03675102, z: 4.55939e-18}
+      rotation: {x: -1.220766e-16, y: 9.741752e-18, z: -0.12047835, w: 0.99271595}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mid_Hair_Joint
+      parentName: Hair_Joint
+      position: {x: -0.03940293, y: -1.110223e-18, z: -2.064134e-33}
+      rotation: {x: 0, y: 0, z: 0.034914676, w: 0.9993903}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lower_Hair_Joint
+      parentName: Mid_Hair_Joint
+      position: {x: -0.056467436, y: -5.551115e-17, z: 1.9140411e-33}
+      rotation: {x: 0.45171726, y: 0.5440143, z: -0.45171726, w: 0.5440143}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

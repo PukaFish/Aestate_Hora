@@ -19,7 +19,7 @@ public class GoToGame : MonoBehaviour
     }
     public void HomeScene()
     {
-        SceneManager.LoadScene("House");
+        SceneManager.LoadScene("House 1");
     }
     public void RoomScene()
     {

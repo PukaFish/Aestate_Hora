@@ -8,12 +8,15 @@ using UnityEngine.InputSystem;
 
 public class DiaMana : MonoBehaviour
 {
+    //https://youtu.be/BEaOHWkZhtE?si=yY7xMUog76P7L3TB
     [SerializeField] private GameObject dialogueParent;
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private Button option1Button;
     [SerializeField] private Button option2Button;
     [SerializeField] private Button option3Button;
+
+    [SerializeField] private Button[] talkButton;
 
     [SerializeField] private float typingSpeed = 0.05f;
     [SerializeField] private float turnSpeed = 2f;
@@ -34,11 +37,14 @@ public class DiaMana : MonoBehaviour
 
     public void DialogueStart(List<dialogueString> textToPrint, Transform NPC)
     {
+        for (int i = 0; i < talkButton.Length; i++)
+        {
+            int buttonIndex = i; // Capturing the current value of i for each iteration
+            talkButton[buttonIndex].gameObject.SetActive(false);
+        }
         dialogueParent.SetActive(true);
-        //.enable player controller so that they can't move
 
         //StartCoroutine(TurnCameraTowardsNPC(NPC));
-
         dialogueList = textToPrint;
         currentDialogueindex = 0;
 
@@ -55,7 +61,6 @@ public class DiaMana : MonoBehaviour
         option1Button.GetComponentInChildren<TMP_Text>().text = "No Option";
         option2Button.GetComponentInChildren<TMP_Text>().text = "No Option";
         option3Button.GetComponentInChildren<TMP_Text>().text = "No Option";
-
     }
 
     private IEnumerator TurnCameraTowardsNPC(Transform NPC)
@@ -82,6 +87,7 @@ public class DiaMana : MonoBehaviour
         {
             dialogueString line = dialogueList[currentDialogueindex];
             line.startDialogueEvent?.Invoke();
+            nameText.text = line.name;
 
             if (line.isQuestion)
             {
@@ -109,6 +115,7 @@ public class DiaMana : MonoBehaviour
             line.endDialogueEvent?.Invoke();
             optionSelected = false;
         }
+
         DialogueStop();
     }
 
@@ -144,7 +151,7 @@ public class DiaMana : MonoBehaviour
 
     private bool AnyVRButtonPressed()
     {
-        // Check if any button on the VR controller is currently pressed
+        // Check if right trigger button on the VR controller is currently pressed
         return Gamepad.current != null && Gamepad.current.rightTrigger.isPressed;
     }
 
@@ -153,7 +160,11 @@ public class DiaMana : MonoBehaviour
         StopAllCoroutines();
         dialogueText.text = "";
         dialogueParent.SetActive(false);
-
-        //enable controller
+        for (int i = 0; i < talkButton.Length; i++)
+        {
+            int buttonIndex = i; // Capturing the current value of i for each iteration
+            talkButton[buttonIndex].gameObject.SetActive(true);
+        }
     }
+
 }

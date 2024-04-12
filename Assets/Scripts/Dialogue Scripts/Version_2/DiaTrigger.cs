@@ -16,6 +16,11 @@ public class DiaTrigger : MonoBehaviour
         gameObject.GetComponent<DiaMana>().DialogueStart(dialogueStrings, NPCTransform);
     }
 
+    public void finishDia()
+    {
+        Destroy(GetComponent<DiaTrigger>());
+    }
+
     /*private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player") && !hasSpoken)
@@ -30,6 +35,7 @@ public class DiaTrigger : MonoBehaviour
 public class dialogueString
 {
     public string name;
+    [TextArea(3, 5)]
     public string text; //Text that NPC says
     public bool isEnd; //If line is the final line
 

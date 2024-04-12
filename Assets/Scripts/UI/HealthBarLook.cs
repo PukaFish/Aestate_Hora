@@ -9,7 +9,7 @@ public class HealthBarLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 LookVector = new Vector3(Player.transform.position.x, 0, Player.transform.position.z);
+        Vector3 LookVector = new Vector3(Player.transform.position.x, Player.transform.position.y, Player.transform.position.z);
         transform.LookAt(LookVector);
     }
 }

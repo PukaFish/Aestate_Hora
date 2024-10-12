@@ -11,17 +11,4 @@ public class BulletController : MonoBehaviour
     {
         Destroy(gameObject, 5f);
     }
-
-    private void OnCollisionEnter(Collision collision) {
-        if(collision.gameObject.tag == "Enemy"){
-            //collision.gameObject.GetComponent<EnemyStats>().TakeDamage(1);
-
-            GameObject sb = Instantiate(stickyBullet) as GameObject;
-            ContactPoint contact = collision.contacts[0];
-            sb.transform.position = contact.point;
-            sb.transform.parent = collision.gameObject.transform;
-
-            Destroy(gameObject);
-        }
-    }
 }
